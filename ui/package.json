@@ -1,0 +1,36 @@
+{
+  "name": "@sheikhtabarak/ui",
+  "version": "1.0.0",
+  "description": "NPM Packages for ready made and easy to use Frontend Elements.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheikh-tabarak/smt/ui.git"
+  },
+  "keywords": [
+    "ui",
+    "tailwind",
+    "tailwindcss",
+    "react-ui",
+    "buttons",
+    "input-fields",
+    "forms"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Muhammad Tabarak <admin@sheikhtabarak.me> (https://sheikhtabarak.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheikh-tabarak/smt-ui/issues"
+  },
+  "homepage": "https://smt.sheikhtabarak.me/ui",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": ">=3"
+  }
+}
