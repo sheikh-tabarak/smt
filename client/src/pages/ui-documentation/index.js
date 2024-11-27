@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { BiCopy } from 'react-icons/bi';
 import { copyToClipboard } from '../../utils/functions';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

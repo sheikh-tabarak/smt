@@ -1,4 +1,3 @@
-import { Button } from '@sheikhtabarak/ui';
 import { toast } from 'react-toastify';
 import { FaIcons } from 'react-icons/fa';
 import React, { useState } from 'react'
@@ -6,6 +5,8 @@ import { copyToClipboard } from '../../utils/functions';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { BiCopy } from 'react-icons/bi';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+import { Button } from '@sheikhtabarak/ui';
 
 
 function ButtonWidget() {
