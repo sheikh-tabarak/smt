@@ -24,26 +24,28 @@ For full documentation, visit [smt.sheikhtabarak.me/ui](https://smt.sheikhtabara
 ## Example
 
 ```jsx
-
 import React from 'react';
+import { FaIcons } from 'react-icons/fa';
+import { Button } from "@sheikhtabarak/ui";
 
-import Button from "@sheikhtabarak/ui/dist/components/button";
-  
-  function App(){
-
-    return (
-        <Button 
-        onClick={() => { console.log('Clicked') }}
-        label={'My Fancy Button'} 
-        disabled={true} 
-        icon={ /* your svg*/ }
-        type={'submit'} // empty if nothing
-        className={'bg-red-500'} // Custom Styling | Default : bg-primary 
-        size = {'sm'} // Can be sm | md | lg
-        loading={true} // loading button in case of async actions
- />
-    );
-  }
+function App(){
+  const [loading, setLoading] = useState(false)
+ return (
+  <Button
+     loading={loading}
+     color={'primary'}
+     size={'medium'}
+     onClick={() => {
+     setLoading(true)
+     setTimeout(() => {
+       toast.success('Task Completed')
+       setLoading(false)
+     }, 3000);
+     }}
+     children={<div className='flex gap-2 items-center'><FaIcons />My Fancy Button</div>}
+   />
+ );
+}
 ```
 
 ## Contribute

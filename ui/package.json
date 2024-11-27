@@ -1,14 +1,19 @@
 {
   "name": "@sheikhtabarak/ui",
-  "version": "1.0.0",
-  "description": "NPM Packages for ready made and easy to use Frontend Elements.",
+  "version": "1.0.1",
+  "description": "A simple UI component library",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist",
+    "tailwind": "npx tailwindcss -i ./input.css -o ./src/styles.css --watch",
+    "clean": "rimraf dist",
+    "build:css": "postcss src/styles.css -o dist/styles.css",
+    "prepare": "npm run clean && npm run build && npm run build:css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sheikh-tabarak/smt/ui.git"
+    "url": "https://github.com/sheikh-tabarak/smt/tree/main/ui"
   },
   "keywords": [
     "ui",
@@ -20,7 +25,8 @@
     "forms"
   ],
   "files": [
-    "dist"
+    "dist/",
+    "README.md"
   ],
   "author": "Muhammad Tabarak <admin@sheikhtabarak.me> (https://sheikhtabarak.me)",
   "license": "ISC",
@@ -31,6 +37,21 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
+    "react-icons": ">=5",
     "tailwindcss": ">=3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.15"
   }
 }
