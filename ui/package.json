@@ -31,7 +31,7 @@
   "author": "Muhammad Tabarak <admin@sheikhtabarak.me> (https://sheikhtabarak.me)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sheikh-tabarak/smt-ui/issues"
+    "url": "https://github.com/sheikh-tabarak/smt/issues"
   },
   "homepage": "https://smt.sheikhtabarak.me/ui",
   "peerDependencies": {

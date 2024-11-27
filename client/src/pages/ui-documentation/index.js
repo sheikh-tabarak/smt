@@ -93,7 +93,7 @@ function App(){
  );
 }
  `
- }
+  }
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);

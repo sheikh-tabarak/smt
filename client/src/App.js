@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router";
 import 'react-toastify/dist/ReactToastify.css';
-import UIDocumentation from "./pages/ui-documentation";
+import UIDocumentation from "./pages/ui-documentation/index";
 import { Zoom, ToastContainer } from "react-toastify";
 
 function App() {
